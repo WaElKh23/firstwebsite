@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>First WEBSITE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <nav class="nav"> 
+        <ul class="nav__list">
+            <li class="nav__listlogo">
+                <img src="images/64px-University_of_Minnesota_Logo.svg.png">
+            </li>
+            <li class="nav__listitem">About
+                <ul class="nav__listitemdrop">
+                    <li>Team Members</li>
+                    <li>Process</li>
+                    <li>History</li>
+                </ul>
+            </li>
+            <li class="nav__listitem">Research
+                <ul class="nav__listitemdrop">
+                    <li>Portfolio</li>
+                    <li>Showcase</li>
+                </ul>
+            </li>
+            <li class="nav__listitem">Contact</li>
+        </ul>
+    </nav>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/try1.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png">
+            </div>
+
+            <div class="subtitle">Press here for Calculator</div>
+            <a href="calculator.html">BMW is a cool car</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/devcamp.png" alt="">
+            </div>
+
+            <div class="subtitle">Coding bootcamp and learning management system.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/eventbrite.png" alt="">
+            </div>
+
+            <div class="subtitle">Eventbrite is the leading event management platform on the web with millions of individuals utilizing their applications
+              to find, register or, and management events in numerous industries.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/shop-hacker.png" alt="">
+            </div>
+
+            <div class="subtitle">Shop Hacker allows you to easily import digital products such as elearning courses, software, and games directly
+              into your ecommerce store.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/crondose.png" alt="">
+            </div>
+
+            <div class="subtitle">Online tutorials and productivity tips.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/dailysmarty.png" alt="">
+            </div>
+
+            <div class="subtitle">Keep track of what you learn every day.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/dashtrack.png" alt="">
+            </div>
+
+            <div class="subtitle">What you track improves. DashTrack is a journal that makes it easy to track your daily tasks and make the most
+              of your time each day.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/devtrunk.png" alt="">
+            </div>
+
+            <div class="subtitle">Online shop for developer happiness.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">Online technology tutorials.</div>
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () =>{
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+        })
+        portfolioItem.addEventListener('mouseout', () =>{
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+        })
+    })
+</script>
+</html>
